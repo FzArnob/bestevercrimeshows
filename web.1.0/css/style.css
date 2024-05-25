@@ -833,7 +833,7 @@
 }
 .menu-area-main li.active a {
      color: #fff;
-     background: #0ed1f0;
+     background: #ff0b45;
      border-radius: 17px;
      }
 
@@ -862,7 +862,7 @@
 
  .main-menu ul>li a:hover {
 color: #fff;
-background: #0ed1f0;
+background: #ff0b45;
 border-radius: 17px;
 transition: all 0.3s ease-in;
  }
@@ -945,7 +945,7 @@ transition: all 0.3s ease-in;
      vertical-align: middle;
     margin: 6px 0px;
 }
- .main-menu ul>li:nth-child (6) {
+ .main-menu ul>li:nth-child(6) {
      padding-right: 0px;
 }
  .nav>li {
@@ -998,7 +998,7 @@ transition: all 0.3s ease-in;
   .text-bg span {
      font-size: 80px;
 line-height: 80px;
-color: #0fc9da;
+color: #ff0b45;
 text-transform: uppercase;
   }
  .text-bg h1 {
@@ -1032,7 +1032,7 @@ margin-right: 10px;
 transition: ease all 0.5s;
  }
  .text-bg a:hover {
-     background-color: #0ed1f0;
+     background-color: #ff0b45;
     color: #fff;
     transition: ease all 0.5s;          
 }
@@ -1089,7 +1089,7 @@ transition: ease all 0.5s;
 
 .carousel-control-prev i {
  background: #f9f9f9;
-    color: #03daee;
+    color: #ff0b45;
     width: 70px;
     height: 70px;
      font-size: 20px;
@@ -1101,7 +1101,7 @@ transition: ease all 0.5s;
 }
 .carousel-control-next i {
     background: #f9f9f9;
-    color: #03daee;
+    color: #ff0b45;
     width: 70px;
     font-size: 20px;
     height: 70px;
@@ -1114,16 +1114,16 @@ transition: ease all 0.5s;
 }
  
 .carousel-control-next, .carousel-control-prev {
-    bottom: -63%;
-     top: inherit;
      z-index: 999;
      opacity: 1;
 }
 .carousel-control-prev {
-      left: 40%;
+    position: absolute;
+    left: 0px;
 }
 .carousel-control-next {
-    right: 40%;
+    position: absolute;
+    right: 0px;
 }
 
 /** about section **/
@@ -1176,8 +1176,8 @@ border-radius: 30px;
 
 
  .about .about-box a:hover{ 
-     background-color: #0ed1f0;
-     border: #0ed1f0 solid 1px;
+     background-color: #ff0b45;
+     border: #ff0b45 solid 1px;
     color: #fff;
  }
  .about .about-box figure {
@@ -1229,8 +1229,8 @@ float: left;
 margin-top: 53px;
 }
  .box_text a:hover {
-     background-color: #0ed1f0;
-     border: #0ed1f0 solid 1px;
+     background-color: #ff0b45;
+     border: #ff0b45 solid 1px;
      color: #fff;
 }
 .padding_left3 {padding-right: 0px;}
@@ -1291,7 +1291,7 @@ margin-top: 53px;
 
 .hover_box {
 
-background: #0ed1f0bf;
+background: #ff0b45bf;
 display: flex;
 justify-content: center;
 position: absolute;
@@ -1310,8 +1310,8 @@ transition: ease-in all 0.5s;
      transition: ease-in all 0.5s;
 }
  .Gallery_text a:hover {
-     background-color: #0ed1f0;
-     border: #0ed1f0 solid 1px;
+     background-color: #ff0b45;
+     border: #ff0b45 solid 1px;
      color: #fff;
 }
 ul.icon_hu {text-align: center;}
@@ -1383,7 +1383,7 @@ ul.icon_hu li {padding: 10px 3px; display: inline-block;}
      border-radius: 30px;
 }
 .contact_bg .send:hover {
-     background-color: #0fb0d3;
+     background-color: #ff0b45;
 
 color: #fff;
 transition: all 0.3s ease-in;
@@ -1438,8 +1438,8 @@ margin: 0 auto;
  .submit {
 
     height: 52px;
-    border: #0fb0d3 solid 1px;
-     background: #0fb0d3;
+    border: #ff0b45 solid 1px;
+     background: #ff0b45;
      color: #fff;
      margin-left: -5px;
      font-weight: 500;
@@ -1452,7 +1452,7 @@ margin: 0 auto;
  .submit:hover {
      background: #ddd;
      border: #ddd solid 1px;
-     color: #0fb0d3;
+     color: #ff0b45;
      transition: all 0.3s ease-in;
 
 }
@@ -1494,7 +1494,7 @@ flex-wrap: wrap;
  ul.social_link li a  {
     font-size: 24px;
 color: #161616;
-background: #0fb0d3;
+background: #ff0b45;
 border-radius: 80px;
 display: flex;
 align-items: center;
@@ -1525,7 +1525,7 @@ justify-content: center;
      color: #fff;
 }
  .copyright a:hover {
-     color: #0fb0d3 ;
+     color: #ff0b45 ;
 }
 /** end footer **/
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
@@ -1533,14 +1533,13 @@ justify-content: center;
 
 .contineer_page .header {background: #656565; padding-bottom: 27px;     position: inherit;}
 
-.backgro_mh {background: #0ed1f0; }
+.backgro_mh {background: #ff0b45; }
 .heding h2 {
      color: #fff;
 font-size: 60px;
 line-height: 60px;
 padding: 45px 0;
 text-align: center;}
-
 
 
 
