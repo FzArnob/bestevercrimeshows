@@ -91,35 +91,7 @@
       </div>
     </div>
   </div>
-  <div class="video-container">
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/yxDTy-efbuQ" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/apLHnv64rSM" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/_McxmFy33RY" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/hfWcVHaI1Og" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/tWKoJ9aUuzc" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/qZGQxirZYqo" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/E-zTdou_zHk" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/2947Q5SG9io" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <div class="video">
-      <iframe src="https://www.youtube.com/embed/WIbpEMF2-SM" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
+  <div class="video-container" id="videoContainer"></div>
 
 
 
@@ -135,6 +107,39 @@
   </footr>
   <!-- end footer -->
   <!-- Javascript files-->
+  <script>
+    const videoIds = [
+      'yxDTy-efbuQ',
+      'apLHnv64rSM',
+      '_McxmFy33RY',
+      'hfWcVHaI1Og',
+      'tWKoJ9aUuzc',
+      'qZGQxirZYqo',
+      'E-zTdou_zHk',
+      '2947Q5SG9io',
+      'WIbpEMF2-SM'
+    ];
+  
+    function generateVideoContainer(videoIds) {
+      const container = document.getElementById('videoContainer');
+      
+      videoIds.forEach(id => {
+        const videoDiv = document.createElement('div');
+        videoDiv.className = 'video';
+        
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${id}`;
+        iframe.frameBorder = '0';
+        iframe.allowFullscreen = true;
+        
+        videoDiv.appendChild(iframe);
+        container.appendChild(videoDiv);
+      });
+    }
+  
+    // Call the function to generate the video container
+    generateVideoContainer(videoIds);
+  </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
